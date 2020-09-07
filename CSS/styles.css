@@ -7,12 +7,14 @@ h1, h2, h3 {
 }
 
 h2 {
-    color: #3046c5;
+    color: #3046C5;
 }
+
 header h2 {
-    color: #cec8ff;
+    color: #CEC8FF;
 }
-.site-footer{
+
+footer {
     background-image: linear-gradient(#CEC8FF, white);
     padding: 20px 0;
 }
@@ -35,5 +37,4 @@ header h2 {
 }
 
 img-fluid {
-    
 }
