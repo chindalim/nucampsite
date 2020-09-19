@@ -4,6 +4,7 @@ $color-pale: #CEC8FF;
 $color-mid: #901CAD;
 $color-dark: #60106b;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-teal: #17A2B8;
 
 $body-font: "Open Sans",
 sans-serif;
@@ -28,20 +29,20 @@ h2 {
 
 header {
     h2 {
-        color: #$color-pale:;
+        color: $color-pale;
     }
 }
 
-footer {
-    background-image: linear-gradient(#$color-pale:, white);
+.site-footer {
+    background-image: linear-gradient($color-pale, white);
     padding: 20px 0;
 }
 
 .jumbotron {
-    padding: 30px;
-    background-image: linear-gradient(to right, $color-secondary, $color-primary, #60106B);
-    color: white;
     margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
+    color: white;
 }
 
 .row-content {
@@ -51,17 +52,15 @@ footer {
 }
 
 .navbar {
-    background-color: #$color-mid;
-}
-
-img-fluid {}
-
-.carousel-caption {
-    background-color: $color-black-transparent;
+    background-color: $color-mid;
 }
 
 .carousel {
     border: solid $color-secondary;
+}
+
+.carousel-caption {
+    background-color: $color-black-transparent;
 }
 
 #carouselButton {
@@ -70,3 +69,18 @@ img-fluid {}
     bottom: 0;
     z-index: 100;
 }
+
+#reserveModal{
+    .modal-header {
+        background-color: $color-teal;
+        color: white;
+    }
+}
+
+#loginModal {
+    .modal-header {
+        background-color: $color-mid;
+        color: white;
+    }
+}
+
